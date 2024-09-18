@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>blog_post_form</title>
+        <style>
+            div {
+                background-color: #F4EBD9;
+                border: 1%;
+                padding: 1%;
+                margin: 1%;
+                font-size: 1%;
+                text-align: center;
+                flex-grow: unset;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            .flex-container {
+                display:flex;
+                justify-content: space-around;
+                padding: 1%;
+                background:#77685D;
+                display: flex;
+                flex-direction: column;
+            }
+             body {
+                background-color: #F4EBD9;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <center><h1>Create A Post</h1></center>
+        </header>
+    
+        <nav>
+            <h2>Other Pages</h2>
+            <ul>
+                <li><a href="table_of_contents.html">Table Of Contents</a></li>
+                <li><a href="blog_layout.html">Example Layout Of Your Blog</a></li>
+                <li><a href="multimedia_blog_post.html">Example Layout Of A Multimedia Blog</a></li>
+            </ul>
+        </nav>
+    
+        <main class="flex-container">
+            <div>
+                <input type="text" name="title" placeholder="Blog Title">
+            </div>
+            <div>
+                <input type="text" name="author" placeholder="Authors Name">
+            </div>
+            <div>
+                <textarea name="content" rows="5" cols="60" placeholder="Enter Blog Content"></textarea>
+            </div>
+            <div>
+            <select name="category" id="blogCategory">
+                <option value="">Select A Blog Category</option>
+                <option value="info">Informative</option>
+                <option value="comedy">Comedy</option>
+                <option value="story">Story</option>
+                <option value="other">Other</option>
+            </select>
+            </div>
+            <button type="button" onclick="alert('Form Submitted!')">Submit Post</button>
+        </main>
+    </body>
+</html>
